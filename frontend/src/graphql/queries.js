@@ -39,3 +39,24 @@ export const getTransactions = `query GetTransactions($id: ID!, $limit: Int, $cu
     cursor
   }
 }`;
+
+export const getRecurring = `query GetRecurring($id: ID!, $limit: Int, $cursor: String) {
+  getRecurring(id: $id, limit: $limit, cursor: $cursor) {
+    recurring {
+      account_id
+      stream_id
+      category
+      description
+      merchant_name
+      first_date
+      last_date
+      frequency
+      average_amount
+      iso_currency_code
+      is_active
+      status
+      personal_finance_category
+    }
+    cursor
+  }
+}`;

@@ -33,6 +33,10 @@ export default function Institution() {
           <Heading level={6}>Transactions</Heading>
           <Transactions id={id} accounts={accountMap}/>
         </View>
+        <View>
+          <Heading level={5}>Recurring Transactions</Heading>
+          <Recurring id={id} accounts={accountMap}/>
+        </View>
       </Flex>
     </Flex>
   );
