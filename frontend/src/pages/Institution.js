@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Divider, Flex, Heading, View } from '@aws-amplify/ui-react';
 import Accounts from '../components/Accounts';
 import Transactions from '../components/Transactions';
+import Recurring from '../components/Recurring';
 
 export default function Institution() {
 
