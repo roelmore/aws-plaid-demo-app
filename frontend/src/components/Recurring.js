@@ -26,7 +26,7 @@ export default function Recurring({ id, accounts = {} }) {
       setLoading(false);
     } catch (err) {
       setLoading(false);
-      logger.error('unable to get transactions', err);
+      logger.error('unable to get transactions *HERE*', err);
     }
   }
 
@@ -42,7 +42,7 @@ export default function Recurring({ id, accounts = {} }) {
       }
       setTransactions([...transactions, ...res.data.getRecurring.transactions]);
     } catch (err) {
-      logger.error('unable to get transactions', err);
+      logger.error('unable to get transactions *NO HERE*', err);
     }
   }
 
