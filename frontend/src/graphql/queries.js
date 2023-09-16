@@ -42,7 +42,7 @@ export const getTransactions = `query GetTransactions($id: ID!, $limit: Int, $cu
 
 export const getRecurring = `query GetRecurring($id: ID!, $limit: Int, $cursor: String) {
   getRecurring(id: $id, limit: $limit, cursor: $cursor) {
-    transactions {
+    outflow_streams {
       account_id
       stream_id
       category
